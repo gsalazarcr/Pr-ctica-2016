@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+</style><link href="Estilos CSS/Estilo.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv3 {
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	z-index: 1;
+	background-color: #009999;
+	top: 150px;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv4 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	visibility: visible;
+}
+#foto1 {
+	position: absolute;
+	left: 85px;
+	top: 280px;
+	width: 808px;
+	height: 172px;
+	z-index: 2;
+	visibility: visible;
+}
+#grande {
+	position: absolute;
+	left: 404px;
+	top: 529px;
+	width: 262px;
+	height: 259px;
+	z-index: 3;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="content">
+  <div id="head">
+  <h1>Sitio Prueba</h1>
+  </div>
+  <div id="logo"><img src="Img/dibujo.png" width="126" height="139" /></div>
+  <div id="apDiv3">
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+      <li><a class="MenuBarItemSubmenu" href="#">Inicio</a>
+        <ul>
+          <li><a href="#">Elemento 1.1</a></li>
+          <li><a href="#">Elemento 1.2</a></li>
+          <li><a href="#">Elemento 1.3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Servicios</a></li>
+      <li><a class="MenuBarItemSubmenu" href="#">Galería</a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">Elemento 3.1</a>
+            <ul>
+              <li><a href="#">Elemento 3.1.1</a></li>
+              <li><a href="#">Elemento 3.1.2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Elemento 3.2</a></li>
+          <li><a href="#">Elemento 3.3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contáctenos</a></li>
+    </ul>
+  </div>
+</div>
+<div id="foto1" onfocus="MM_showHideLayers('foto1','','show');MM_showHideLayers('foto1','','hide')"><a href="javascript:;" onclick="MM_showHideLayers('apDiv5','','show')"><img src="Img/Logo.jpg" width="210" height="230" onmouseover="MM_showHideLayers('apDiv5','','hide')" border="0" /></a><img src="Img/dibujo.png" alt="2" width="223" height="233" /><img src="Img/pale eolico-anteprima-400x400-248034.jpg" alt="3" width="196" height="231" /><img src="Img/2013-un-gran-año-para-la-energía-eólica.jpg" alt="4" width="176" height="229" /></div>
+<div id="grande"><img src="Img/Logo.jpg" width="261" height="259" alt="1" /></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
